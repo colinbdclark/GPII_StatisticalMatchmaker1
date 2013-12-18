@@ -1,0 +1,14 @@
+{
+    "typeName": "statisticalMatchMaker.production",
+    "includes": [
+        "../node_modules/universal/gpii/node_modules/matchMaker/configs/production.json"
+    ],
+    "demands": [{
+        "demandingName": "gpii.matchMaker.match",
+        "contextNames": ["gpii.matchMaker", "statisticalMatchMaker.production"],
+        "demandSpec": {
+            "funcName": "gpii.matchMaker.statistical.match",
+            "args": ["{arguments}.0", "{arguments}.1", "{arguments}.2"]
+        }
+    }]
+}

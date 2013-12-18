@@ -1,0 +1,22 @@
+{
+  "name": "statisticalMatchMaker",
+  "description": "JavaScript end of the smm1.",
+  "version": "1.47",
+  "author": "GPII",
+  "bugs": "http://issues.gpii.org/",
+  "homepage": "http://gpii.net/",
+  "dependencies": {
+        "universal": "git://github.com/GPII/universal.git#a03b5e4512691cad032186434bd3e8151ad23a6d",
+        "when": "~1.8.1"
+  },
+  "licenses": [
+       {
+           "type": "BSD-3-Clause",
+           "url": "http://www.opensource.org/licenses/BSD-3-Clause"
+       }
+  ],
+  "keywords": ["matchmaker", "framework", "evented", "GPII"],
+  "repository": "git://github.com/GPII/statisticalMatchMaker.git",
+  "main": "./lib/StatisticalMatchMaker.js",
+  "engines": { "node" : ">=0.1.9" }
+}
