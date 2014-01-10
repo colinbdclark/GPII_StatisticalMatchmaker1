@@ -1,14 +1,21 @@
 {
-    "typeName": "statisticalMatchMaker.production",
+    "typeName": "ruleBasedMatchMaker.production",
+    "options": {
+        "gradeNames": ["autoInit", "fluid.littleComponent"],
+        "distributeOptions": {
+            "source": "{that}.options.matchMakerGrades",
+            "target": "{that matchMaker}.options.gradeNames"
+        },
+        "components": {
+            "server": {
+                "options": {
+                    "port": 80
+                }
+            }
+        },
+        "matchMakerGrades": ["gpii.matchMaker.statistical"]
+    },
     "includes": [
         "../node_modules/universal/gpii/node_modules/matchMaker/configs/production.json"
-    ],
-    "demands": [{
-        "demandingName": "gpii.matchMaker.match",
-        "contextNames": ["gpii.matchMaker", "statisticalMatchMaker.production"],
-        "demandSpec": {
-            "funcName": "gpii.matchMaker.statistical.match",
-            "args": ["{arguments}.0", "{arguments}.1", "{arguments}.2"]
-        }
-    }]
+    ]
 }
