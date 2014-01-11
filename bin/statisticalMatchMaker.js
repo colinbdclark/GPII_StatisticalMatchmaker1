@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 var fluid = require("universal"),
     kettle = fluid.registerNamespace("kettle");
 

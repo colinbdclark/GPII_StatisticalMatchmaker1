@@ -17,6 +17,6 @@
   ],
   "keywords": ["matchmaker", "framework", "evented", "GPII"],
   "repository": "git://github.com/GPII/statisticalMatchMaker.git",
-  "main": "./lib/StatisticalMatchMaker.js",
+  "main": "./bin/statisticalMatchMaker.js",
   "engines": { "node" : ">=0.1.9" }
 }
